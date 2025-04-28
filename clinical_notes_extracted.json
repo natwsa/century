@@ -1,0 +1,418 @@
+[
+  {
+    "original_note": "Patient: John Smith, 58-year-old male\nMedical Record #: 1234\nArrived for a follow-up appointment complaining of ongoing fatigue and occasional blurred vision. Denies chest pain.\n\nKnown history of Type 2 Diabetes (T2D), currently on Metformin 500 mg BID and occasional insulin injections. Previous lab work indicated an elevated A1C of 8.7%. The patient also mentioned that his cat, Fluffy, seems lethargic lately. The overhead fluorescent lights in the waiting area were flickering, making it difficult to read the nurse's quick notes.\n\nHe reports mild numbness in his feet, suggesting early peripheral neuropathy. Other comorbidity includes hypertension, managed with Lisinopril 20 mg daily. Nurse Linda noted that he had tested negative for COVID-19 last month.\n\nNext step: schedule a fasting glucose test in two weeks to reassess. Consider adjusting insulin dosage if glucose remains high. Also, the patient could not recall if he still smokes occasionally. Overall plan is to reinforce medication adherence and review dietary habits at the next visit.",
+    "extracted_fields": {
+      "patient_name": "John Smith",
+      "age": 58,
+      "gender": "male",
+      "reason for visit": "follow-up appointment complaining of ongoing fatigue and occasional blurred vision",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "occasional insulin injections",
+        "Lisinopril 20 mg daily"
+      ],
+      "lab_results": [
+        "A1C of 8.7%",
+        "negative for COVID-19"
+      ],
+      "next steps": "schedule a fasting glucose test in two weeks to reassess. Consider adjusting insulin dosage if glucose remains high. Also, the patient could not recall if he still smokes occasionally. Overall plan is to reinforce medication adherence and review dietary habits at the next visit."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Linda Green, 45-year-old female\nMedical Record #: 5678\nChief Complaint: Persistent headaches and tingling in left foot.\n\nPast medical history includes Type 2 Diabetes, diagnosed three years ago. Current medications: Metformin 500 mg BID, Atorvastatin 10 mg daily. Last recorded A1C was 7.9%. Reports occasional insomnia, which she attributes to stress at her job as a florist. \nShe mentioned her laptop battery died right before the telehealth visit, which caused a delay in connection. Reports that she recently started a home yoga routine recommended by her sister.\n\nPlan: Continue current medication regimen, order routine labs for lipids and A1C. Advise patient to monitor glucose levels more frequently if headaches persist.",
+    "extracted_fields": {
+      "patient_name": "Linda Green",
+      "age": 45,
+      "gender": "female",
+      "reason for visit": "Persistent headaches and tingling in left foot",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "Atorvastatin 10 mg daily"
+      ],
+      "lab_results": [
+        "Last recorded A1C was 7.9%"
+      ],
+      "next steps": "Continue current medication regimen, order routine labs for lipids and A1C. Advise patient to monitor glucose levels more frequently if headaches persist"
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Michael Brown, 62-year-old male\nMedical Record #: 9102\nFollow-up for hypertension and Type 2 Diabetes. Patient arrived wearing a cast on his right arm (unrelated to current condition; he slipped on ice last week).\n\nVital signs: BP 150/95, pulse 78, temp 98.6\u00b0F. On Metformin 1000 mg daily, Lisinopril 20 mg daily. Last known A1C was 8.1%. He also takes a multivitamin but couldn\u2019t recall the brand. \nHe mentioned watching the hospital cafeteria menu \u201cgo digital\u201d recently, which distracted him from asking the nurse some questions.\n\nNext step: Increase Lisinopril dose if BP remains elevated. Schedule blood tests to check renal function. Advise patient to keep arm elevated and follow up with orthopedics.",
+    "extracted_fields": {
+      "patient_name": "Michael Brown",
+      "age": 62,
+      "gender": "male",
+      "reason for visit": "Follow-up for hypertension and Type 2 Diabetes",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg daily",
+        "Lisinopril 20 mg daily"
+      ],
+      "lab_results": [
+        "Last known A1C was 8.1%"
+      ],
+      "next steps": "Increase Lisinopril dose if BP remains elevated. Schedule blood tests to check renal function. Advise patient to keep arm elevated and follow up with orthopedics."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Sarah Johnson, 50-year-old female\nMedical Record #: 3344\nComplaint: Frequent urination, increased thirst. States she has been feeling anxious at night.\n\nDiagnosed with Type 2 Diabetes last year. Current regimen: Glipizide 5 mg daily, occasionally forgets her dose. Vitals: BP 140/88, HR 82. She\u2019s also being treated for hyperlipidemia with Simvastatin 20 mg daily. Lab results from last month show A1C of 7.6%. She brought up her hobby of painting landscapes, stating it helps her relax. \n\nPlan: Reinforce medication adherence. Consider switching to Metformin if blood glucose remains high. Schedule follow-up in 4 weeks to reassess symptoms.",
+    "extracted_fields": {
+      "patient_name": "Sarah Johnson",
+      "age": 50,
+      "gender": "female",
+      "reason for visit": "Frequent urination, increased thirst. States she has been feeling anxious at night.",
+      "allergies": [],
+      "medications": [
+        "Glipizide 5 mg daily",
+        "Simvastatin 20 mg daily"
+      ],
+      "lab_results": [
+        "A1C of 7.6%"
+      ],
+      "next steps": "Reinforce medication adherence. Consider switching to Metformin if blood glucose remains high. Schedule follow-up in 4 weeks to reassess symptoms."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Carlos Ramirez, 55-year-old male\nMedical Record #: 2211\nPresenting with ongoing fatigue and left knee pain. The knee issue may be orthopedic in nature due to a past sports injury.\n\nKnown history of Type 2 Diabetes, on Metformin 500 mg BID and Jardiance 10 mg daily. Last known A1C was 9.2%. He complains about his neighbor\u2019s noisy parrot, which has disrupted his sleep. Currently also on Losartan 50 mg daily for hypertension. \nNurse notes that the patient declined the flu shot, stating personal preference.\n\nAssessment & Plan: Increase Jardiance dosage if next labs still indicate poor glucose control. Recommend an orthopedic consult for knee pain. Counsel patient on sleep hygiene.",
+    "extracted_fields": {
+      "patient_name": "Carlos Ramirez",
+      "age": 55,
+      "gender": "male",
+      "reason for visit": "ongoing fatigue and left knee pain",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "Jardiance 10 mg daily",
+        "Losartan 50 mg daily"
+      ],
+      "lab_results": [
+        "Last known A1C was 9.2%"
+      ],
+      "next steps": [
+        "Increase Jardiance dosage if next labs still indicate poor glucose control",
+        "Recommend an orthopedic consult for knee pain",
+        "Counsel patient on sleep hygiene"
+      ]
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Rebecca Lee, 29-year-old female\nMedical Record #: 7788\nChief Complaint: Rapid weight gain over the past month. Denies any significant dietary changes.\n\nNewly diagnosed with Type 2 Diabetes, started on Metformin 500 mg daily last week. Family history: mother with thyroid disorder. She also mentioned her fianc\u00e9 is an avid cyclist, and they plan to ride together next month. Vitals: BP 128/80, HR 70, no fever. \nEarly lab work: A1C at 8.0%. Reports feeling frustrated about constantly having to check blood sugar. She also has mild seasonal allergies, taking OTC antihistamines occasionally.\n\nPlan: Encourage diet and exercise modifications. Schedule comprehensive labs, including thyroid function tests, to rule out other causes of weight gain.",
+    "extracted_fields": {
+      "patient_name": "Rebecca Lee",
+      "age": 29,
+      "gender": "female",
+      "reason for visit": "Rapid weight gain over the past month. Denies any significant dietary changes.",
+      "allergies": [
+        "mild seasonal allergies"
+      ],
+      "medications": [
+        "Metformin 500 mg daily"
+      ],
+      "lab_results": [
+        "A1C at 8.0%"
+      ],
+      "next steps": "Encourage diet and exercise modifications. Schedule comprehensive labs, including thyroid function tests, to rule out other causes of weight gain."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Thomas Wilson, 67-year-old male\nMedical Record #: 9890\nFollow-up for chronic kidney disease (CKD) stage 3 and Type 2 Diabetes. The patient mentioned that his granddaughter\u2019s birthday party is tomorrow, and he\u2019s anxious about the buffet options.\n\nMedications: Metformin 500 mg BID, Insulin glargine (10 units nightly), and Amlodipine 5 mg daily. Last labs show A1C of 8.5%, eGFR 45 mL/min/1.73m\u00b2. Patient mentions mild fatigue but denies any chest pain. \nHe also complained about the waiting room television being too loud. Advised him on the importance of dietary potassium restriction due to CKD.\n\nPlan: Monitor renal function closely. Possibly consult nephrology if eGFR declines further. Recommend dietician referral to manage both CKD and T2D.",
+    "extracted_fields": {
+      "patient_name": "Thomas Wilson",
+      "age": 67,
+      "gender": "male",
+      "reason for visit": "Follow-up for chronic kidney disease (CKD) stage 3 and Type 2 Diabetes",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "Insulin glargine (10 units nightly)",
+        "Amlodipine 5 mg daily"
+      ],
+      "lab_results": [
+        "A1C of 8.5%",
+        "eGFR 45 mL/min/1.73m\u00b2"
+      ],
+      "next steps": "Monitor renal function closely. Possibly consult nephrology if eGFR declines further. Recommend dietician referral to manage both CKD and T2D."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Emily Dawson, 36-year-old female\nMedical Record #: 5566\nComplaint: Increased thirst and frequent urination for the past two weeks. Reports she recently started a stressful new job at a tech startup.\n\nDiagnosed with Type 2 Diabetes four years ago, not always compliant with medication. Prescribed Metformin 500 mg once daily, but she admits she sometimes forgets. A1C from last visit was 9.0%. She says her dog has been ill, which also caused her to miss some doses. \nCurrently experiencing mild anxiety, considering counseling. She also notes she\u2019s been skipping breakfast to get to work earlier.\n\nPlan: Stress the importance of medication adherence. Consider adding a short-acting insulin if glucose remains uncontrolled. Advise adopting consistent meal times.",
+    "extracted_fields": {
+      "patient_name": "Emily Dawson",
+      "age": 36,
+      "gender": "female",
+      "reason for visit": "Increased thirst and frequent urination for the past two weeks. Reports she recently started a stressful new job at a tech startup.",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg once daily"
+      ],
+      "lab_results": [
+        "A1C from last visit was 9.0%"
+      ],
+      "next steps": "Stress the importance of medication adherence. Consider adding a short-acting insulin if glucose remains uncontrolled. Advise adopting consistent meal times."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Robert Kim, 48-year-old male\nMedical Record #: 3030\nAnnual exam visit. History of Type 2 Diabetes and hyperlipidemia. Doesn\u2019t recall the last time he did a comprehensive lab workup.\n\nMedications: Metformin 1000 mg BID, Rosuvastatin 10 mg daily. Vitals: BP 140/90, HR 76, no fever. He brought his daughter along, who was playing a video game loudly in the exam room. Mentions occasional blurry vision at night. \nHe also says he\u2019s tried a new \u201cherbal tea\u201d for general wellness but isn\u2019t sure if it interacts with his prescriptions.\n\nPlan: Order full blood panel including fasting glucose and lipid profile. Encourage the patient to maintain an updated medication list, including supplements.",
+    "extracted_fields": {
+      "patient_name": "Robert Kim",
+      "age": 48,
+      "gender": "male",
+      "reason for visit": "Annual exam visit",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg BID",
+        "Rosuvastatin 10 mg daily"
+      ],
+      "lab_results": [],
+      "next steps": "Order full blood panel including fasting glucose and lipid profile. Encourage the patient to maintain an updated medication list, including supplements."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Diane Carter, 60-year-old female\nMedical Record #: 1212\nScheduled for routine diabetes check. States she has been feeling increasingly tired, especially after lunch. Also complains about an annoying humming sound from the exam room\u2019s ventilation system.\n\nPast medical history: Type 2 Diabetes (15 years), mild depression (on Sertraline 50 mg daily). Current diabetes regimen: Insulin detemir 15 units twice daily, Metformin 500 mg BID. Last measured A1C was 8.4%. She takes a daily walk around the neighborhood but hasn\u2019t done so this week due to bad weather. \nShe noted her neighbor recommends a supplement that promises to \u201cstabilize blood sugar,\u201d but she\u2019s unsure about it.\n\nAssessment & Plan: Consider adjusting insulin dose if postprandial spikes continue. Advise patient to consult her pharmacist before trying new supplements. Reinforce mental health follow-up.",
+    "extracted_fields": {
+      "patient_name": "Diane Carter",
+      "age": 60,
+      "gender": "female",
+      "reason for visit": "routine diabetes check",
+      "allergies": [],
+      "medications": [
+        "Sertraline 50 mg daily",
+        "Insulin detemir 15 units twice daily",
+        "Metformin 500 mg BID"
+      ],
+      "lab_results": [
+        "Last measured A1C was 8.4%"
+      ],
+      "next steps": [
+        "Consider adjusting insulin dose if postprandial spikes continue",
+        "Advise patient to consult her pharmacist before trying new supplements",
+        "Reinforce mental health follow-up"
+      ]
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Lisa Chang, 72-year-old female\nMedical Record #: 4545\nChief Complaint: Increased fatigue, mild swelling in ankles.\n\nPast medical history: Type 2 Diabetes for 10 years, hypertension, mild osteoarthritis. Medications include Metformin 1000 mg BID, Lisinopril 20 mg daily, and occasional acetaminophen for joint pain. Last A1C recorded at 8.3%.\nShe mentioned that her neighbor\u2019s car alarm went off at 2 AM last night, disturbing her sleep. She also wonders if her new herbal tea could interact with her diabetes meds.\n\nPlan: Check renal function, evaluate for possible edema related to hypertension. Advise patient to continue blood sugar monitoring and bring the herbal tea label next visit.",
+    "extracted_fields": {
+      "patient_name": "Lisa Chang",
+      "age": 72,
+      "gender": "female",
+      "reason for visit": "Increased fatigue, mild swelling in ankles",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg BID",
+        "Lisinopril 20 mg daily",
+        "occasional acetaminophen for joint pain"
+      ],
+      "lab_results": [
+        "Last A1C recorded at 8.3%"
+      ],
+      "next steps": "Check renal function, evaluate for possible edema related to hypertension. Advise patient to continue blood sugar monitoring and bring the herbal tea label next visit"
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: George Patterson, 55-year-old male\nMedical Record #: 7676\nComplaint: Ongoing blurred vision and numbness in fingertips.\n\nHe has a 5-year history of Type 2 Diabetes, currently on Metformin 500 mg BID and Glipizide 5 mg daily. Last known A1C was 9.1%. The patient said he was in a hurry because he needs to pick up his daughter from basketball practice.\nAlso notes sporadic ringing in his ears, which he attributes to loud construction near his home. Reports occasional noncompliance with diet due to frequent travel for work.\n\nAssessment & Plan: Increase Glipizide dosage if readings remain high. Recommend ophthalmology consult for blurred vision. Stress dietary adjustments and consistent medication schedule.",
+    "extracted_fields": {
+      "patient_name": "George Patterson",
+      "age": 55,
+      "gender": "male",
+      "reason for visit": "Ongoing blurred vision and numbness in fingertips",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "Glipizide 5 mg daily"
+      ],
+      "lab_results": [
+        "Last known A1C was 9.1%"
+      ],
+      "next steps": [
+        "Increase Glipizide dosage if readings remain high",
+        "Recommend ophthalmology consult for blurred vision",
+        "Stress dietary adjustments and consistent medication schedule"
+      ]
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Maria Ortega, 63-year-old female\nMedical Record #: 3022\nChief Complaint: Frequent urination, increased thirst over the last month.\n\nType 2 Diabetes diagnosed 4 years ago, managed with Metformin 1000 mg BID and Sitagliptin 100 mg daily. Last lab results: A1C = 8.7%, mild anemia noted. The patient mentioned watching a TV news segment on new diabetes treatments and is curious about injectable medications. \nShe also mentioned that her cat knocked over her pill organizer, and she\u2019s worried she may have missed some doses.\n\nPlan: Recheck blood counts, consider adding basal insulin if next labs remain uncontrolled. Reinforce medication adherence and proper pill organization.",
+    "extracted_fields": {
+      "patient_name": "Maria Ortega",
+      "age": 63,
+      "gender": "female",
+      "reason for visit": "Frequent urination, increased thirst over the last month",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg BID",
+        "Sitagliptin 100 mg daily"
+      ],
+      "lab_results": [
+        "A1C = 8.7%",
+        "mild anemia"
+      ],
+      "next steps": "Recheck blood counts, consider adding basal insulin if next labs remain uncontrolled. Reinforce medication adherence and proper pill organization."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Anthony Reynolds, 48-year-old male\nMedical Record #: 8833\nFollow-up visit for Type 2 Diabetes. Reports intermittent chest tightness, but denies severe pain.\n\nCurrent regimen: Metformin 500 mg TID, Atorvastatin 20 mg daily for hyperlipidemia. He notes that the waiting room was too cold, causing discomfort. Last known A1C: 7.8%. He\u2019s also been dealing with a recent job change, which he says contributes to stress eating.\nVitals: BP 145/92, HR 80, Temp 98.2\u00b0F.\n\nNext step: Rule out cardiac causes of chest tightness. Continue current therapy for diabetes. Suggest stress management techniques and dietary counseling.",
+    "extracted_fields": {
+      "patient_name": "Anthony Reynolds",
+      "age": 48,
+      "gender": "male",
+      "reason for visit": "Follow-up visit for Type 2 Diabetes",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg TID",
+        "Atorvastatin 20 mg daily for hyperlipidemia"
+      ],
+      "lab_results": [
+        "Last known A1C: 7.8%",
+        "BP 145/92",
+        "HR 80",
+        "Temp 98.2\u00b0F"
+      ],
+      "next steps": "Rule out cardiac causes of chest tightness. Continue current therapy for diabetes. Suggest stress management techniques and dietary counseling."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Priya Kapoor, 34-year-old female\nMedical Record #: 1122\nChief Complaint: Sudden weight loss, fatigue, and occasional dizziness.\n\nNewly diagnosed with Type 2 Diabetes, started on Metformin 500 mg BID last week. She mentions her upcoming vacation to Hawaii, worried about managing her diet there. Also complains that her phone battery kept dying, preventing her from tracking glucose in an app.\nLabs: A1C = 9.4%, slightly elevated liver enzymes. She denies alcohol use.\n\nPlan: Investigate liver enzyme elevation, reinforce dietary recommendations, ensure patient understands how to monitor glucose while traveling. Schedule follow-up labs in 6 weeks.",
+    "extracted_fields": {
+      "patient_name": "Priya Kapoor",
+      "age": 34,
+      "gender": "female",
+      "reason for visit": "Sudden weight loss, fatigue, and occasional dizziness",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID"
+      ],
+      "lab_results": [
+        "A1C = 9.4%",
+        "slightly elevated liver enzymes"
+      ],
+      "next steps": "Investigate liver enzyme elevation, reinforce dietary recommendations, ensure patient understands how to monitor glucose while traveling. Schedule follow-up labs in 6 weeks"
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: James Henderson, 59-year-old male\nMedical Record #: 3339\nRoutine check-up for Type 2 Diabetes and hyperlipidemia. Patient states he has minimal exercise since winter started.\n\nMedications: Metformin 1000 mg BID, Rosuvastatin 10 mg daily. Last A1C was 7.5%. He mentions a new hobby, amateur radio, which keeps him seated for prolonged periods. He forgot to wear his glasses today, making it hard to read the consent forms.\nPlan: Encourage more physical activity, potentially indoors. Order new labs to monitor lipid profile and blood glucose control. Discuss possible addition of medication for better glycemic management if needed.",
+    "extracted_fields": {
+      "patient_name": "James Henderson",
+      "age": 59,
+      "gender": "male",
+      "reason for visit": "Routine check-up for Type 2 Diabetes and hyperlipidemia",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg BID",
+        "Rosuvastatin 10 mg daily"
+      ],
+      "lab_results": [
+        "Last A1C was 7.5%"
+      ],
+      "next steps": "Encourage more physical activity, potentially indoors. Order new labs to monitor lipid profile and blood glucose control. Discuss possible addition of medication for better glycemic management if needed."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Anna Li, 27-year-old female\nMedical Record #: 5050\nComplaint: Headaches, frequent nausea, and feeling jittery at work.\n\nShe has a 2-year history of Type 2 Diabetes, controlled on Metformin 500 mg daily. Last recorded A1C was 8.2%. She started drinking high-caffeine energy drinks to cope with long shifts as a nurse. Admits possible dehydration. Also notes that the overhead speaker announcements are too loud in her hospital unit, causing added stress.\n\nPlan: Advise limiting high-caffeine beverages. Re-check fasting glucose. Consider adjusting medication if glucose remains elevated. Suggest hydration and headache evaluation if symptoms persist.",
+    "extracted_fields": {
+      "patient_name": "Anna Li",
+      "age": 27,
+      "gender": "female",
+      "reason for visit": "Headaches, frequent nausea, and feeling jittery at work",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg daily"
+      ],
+      "lab_results": [
+        "Last recorded A1C was 8.2%"
+      ],
+      "next steps": [
+        "Advise limiting high-caffeine beverages",
+        "Re-check fasting glucose",
+        "Consider adjusting medication if glucose remains elevated",
+        "Suggest hydration and headache evaluation if symptoms persist"
+      ]
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Kevin Wright, 66-year-old male\nMedical Record #: 9292\nFollow-up for Type 2 Diabetes and chronic back pain. States the pain worsens when he sits in his recliner too long.\n\nCurrent meds: Metformin 500 mg TID, Ibuprofen PRN for back pain, and Lisinopril 10 mg daily for mild hypertension. Last A1C: 8.9%. He\u2019s annoyed that the pharmacy recently changed his pill bottle labels, making them harder to read. \nComplains of slight dizziness upon standing, possibly orthostatic. He also mentions he\u2019s been skipping breakfast, which might contribute to blood sugar swings.\n\nAssessment & Plan: Evaluate orthostatic hypotension. Increase dietary supervision, possibly add short-acting insulin if glycemic control remains inadequate. Suggest physical therapy referral for back pain.",
+    "extracted_fields": {
+      "patient_name": "Kevin Wright",
+      "age": 66,
+      "gender": "male",
+      "reason for visit": "Follow-up for Type 2 Diabetes and chronic back pain",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg TID",
+        "Ibuprofen PRN for back pain",
+        "Lisinopril 10 mg daily for mild hypertension"
+      ],
+      "lab_results": [
+        "Last A1C: 8.9%"
+      ],
+      "next steps": "Evaluate orthostatic hypotension. Increase dietary supervision, possibly add short-acting insulin if glycemic control remains inadequate. Suggest physical therapy referral for back pain."
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: Olivia Baker, 43-year-old female\nMedical Record #: 7070\nChief Complaint: Persistent fatigue, difficulty concentrating at work.\n\nType 2 Diabetes for 5 years, managed with Metformin 1000 mg BID and Empagliflozin 10 mg daily. Last A1C was 8.1%. She commented on the clinic\u2019s new self-check-in kiosks, saying the interface was confusing. She also notes that her child\u2019s soccer schedule is interfering with her meal planning.\n\nPlan: Reassess medication dosage, possibly increase Empagliflozin. Encourage more consistent meal times. Schedule an A1C test in 3 weeks to monitor any improvement.",
+    "extracted_fields": {
+      "patient_name": "Olivia Baker",
+      "age": 43,
+      "gender": "female",
+      "reason for visit": "Persistent fatigue, difficulty concentrating at work",
+      "allergies": [],
+      "medications": [
+        "Metformin 1000 mg BID",
+        "Empagliflozin 10 mg daily"
+      ],
+      "lab_results": [
+        "Last A1C was 8.1%"
+      ],
+      "next steps": [
+        "Reassess medication dosage, possibly increase Empagliflozin",
+        "Encourage more consistent meal times",
+        "Schedule an A1C test in 3 weeks to monitor any improvement"
+      ]
+    },
+    "suspicious_fields": []
+  },
+  {
+    "original_note": "Patient: David Kim, 70-year-old male\nMedical Record #: 6262\nPresentation: Mild shortness of breath when climbing stairs, random spikes in blood glucose.\n\nPast medical history: Type 2 Diabetes (15 years), CHF (congestive heart failure), and chronic bronchitis. Current regimen includes Metformin 500 mg BID, Furosemide 20 mg daily, and carvedilol 6.25 mg BID. Last known A1C was 9.0%. \nHe mentioned that he accidentally gave his dog the wrong brand of dog food this morning, which caused some confusion in his routine. Also complains about a drafty window in his bedroom disturbing his sleep.\n\nPlan: Evaluate cardiac status, check BNP levels. Consider adding insulin if glucose remains poorly controlled. Recommend addressing sleep quality issues and ensuring a consistent medication schedule.",
+    "extracted_fields": {
+      "patient_name": "David Kim",
+      "age": 70,
+      "gender": "male",
+      "reason for visit": "Mild shortness of breath when climbing stairs, random spikes in blood glucose",
+      "allergies": [],
+      "medications": [
+        "Metformin 500 mg BID",
+        "Furosemide 20 mg daily",
+        "carvedilol 6.25 mg BID"
+      ],
+      "lab_results": [
+        "Last known A1C was 9.0%"
+      ],
+      "next steps": [
+        "Evaluate cardiac status",
+        "check BNP levels",
+        "Consider adding insulin if glucose remains poorly controlled",
+        "Recommend addressing sleep quality issues and ensuring a consistent medication schedule"
+      ]
+    },
+    "suspicious_fields": []
+  }
+]
